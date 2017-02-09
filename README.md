@@ -1,6 +1,13 @@
 # Force Boolean
 Forced transform your variable into a boolean without worried.
 
+## How to install
+
+  ### npm
+    `npm install --save force-boolean`
+  ### yarn
+    `yarn add force-boolean`
+
 ## How to use
 ```javascript
 const ForceBoolean = require('force-boolean')
