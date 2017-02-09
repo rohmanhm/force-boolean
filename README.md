@@ -3,10 +3,8 @@ Forced transform your variable into a boolean without worried.
 
 ## How to install
 
-  ### npm
-    `npm install --save force-boolean`
-  ### yarn
-    `yarn add force-boolean`
+  * via **npm**: `npm install --save force-boolean`
+  * via **yarn**: `yarn add force-boolean`
 
 ## How to use
 ```javascript
