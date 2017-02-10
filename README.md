@@ -19,6 +19,8 @@ console.log(ForceBoolean(YOUR_VAR)) // it's return boolean false
 - [x] return false if value is string '0'
 - [x] return false if value is string 'false'
 - [x] return false if value is boolean false
+- [x] return false if value is undefined
+- [x] return false if value is null
 - [x] return true if value is number 1
 - [x] return true if value is string '1'
 - [x] return true if value is string 'true'
