@@ -15,6 +15,12 @@ describe('force-boolean', () => {
     it('return false if value is boolean false', () => {
       expect(ForceBoolean(false)).toBeA('boolean').toBe(false)
     })
+    it('return false if value is null', () => {
+      expect(ForceBoolean(null)).toBeA('boolean').toBe(false)
+    })
+    it('return false if value is undefined', () => {
+      expect(ForceBoolean(undefined)).toBeA('boolean').toBe(false)
+    })
   })
   describe('return true', () => {
     it('return true if value is number 1', () => {
