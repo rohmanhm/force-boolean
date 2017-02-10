@@ -1,5 +1,13 @@
 module.exports = (value) => {
   switch(typeof value) {
+    case 'object':
+      // handle null value
+      return !(value === null);
+      break;
+    case 'undefined':
+      return false;
+      break;
+
     case 'boolean':
       return value
       break
