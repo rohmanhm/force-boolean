@@ -1,4 +1,4 @@
-module.exports = (value) => {
+module.exports = function (value) {
   switch(typeof value) {
     case 'boolean': // (true | false)
       return value
