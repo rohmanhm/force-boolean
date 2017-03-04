@@ -1,6 +1,6 @@
 {
   "name": "force-boolean",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "transform and convert into real boolean",
   "main": "./src/index.js",
   "license": "MIT",
