@@ -1,4 +1,6 @@
 # Force Boolean
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/rohmanhm/force-boolean.svg)](https://greenkeeper.io/)
 Forced transform your variable into a boolean without worried.
 
 ## How to install
