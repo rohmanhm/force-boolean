@@ -1,6 +1,6 @@
 # Force Boolean
-
 [![Greenkeeper badge](https://badges.greenkeeper.io/rohmanhm/force-boolean.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/rohmanhm/force-boolean.svg?branch=master)](https://travis-ci.org/rohmanhm/force-boolean)
 Forced transform your variable into a boolean without worried.
 
 ## How to install
@@ -10,7 +10,10 @@ Forced transform your variable into a boolean without worried.
 
 ## How to use
 ```javascript
-const ForceBoolean = require('force-boolean')
+// ES6+
+import ForceBoolean from 'force-boolean'
+// CommonJS
+const ForceBoolean = require('force-boolean').default
 
 const YOUR_VAR = 'false'
 console.log(ForceBoolean(YOUR_VAR)) // it's return boolean false

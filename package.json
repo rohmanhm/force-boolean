@@ -2,17 +2,19 @@
   "name": "force-boolean",
   "version": "0.0.5",
   "description": "transform and convert into real boolean",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "license": "MIT",
   "keywords": [
     "javascript",
+    "typescript",
     "force-boolean",
     "forced",
     "convert",
     "boolean"
   ],
   "scripts": {
-    "test": "mocha **/*.test.js"
+    "test": "jest --forceExit"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,25 @@
     "url": "https://github.com/rohmanhm"
   },
   "devDependencies": {
-    "expect": "^1.20.2",
-    "mocha": "^3.2.0"
+    "@types/jest": "^19.2.3",
+    "jest": "^20.0.1",
+    "ts-jest": "^20.0.3",
+    "typescript": "^2.3.2"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/test/**/*.test.(ts|js)"
+    ],
+    "testEnvironment": "node"
   }
 }
