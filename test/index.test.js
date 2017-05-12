@@ -1,5 +1,5 @@
 const expect = require('expect')
-const ForceBoolean = require('../src')
+const ForceBoolean = require('../dist')
 
 describe('force-boolean', () => {
   describe('return false', () => {
@@ -34,6 +34,12 @@ describe('force-boolean', () => {
     })
     it('return true if value is boolean true', () => {
       expect(ForceBoolean(true)).toBeA('boolean').toBe(true)
+    })
+    it('return true if value is array object', () => {
+      expect(ForceBoolean([3, 4, null])).toBeA('boolean').toBe(true)
+    })
+    it('return true if value is object', () => {
+      expect(ForceBoolean({ a: 1, b: 3 })).toBeA('boolean').toBe(true)
     })
   })
 })

@@ -2,7 +2,8 @@
   "name": "force-boolean",
   "version": "0.0.5",
   "description": "transform and convert into real boolean",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "license": "MIT",
   "keywords": [
     "javascript",
