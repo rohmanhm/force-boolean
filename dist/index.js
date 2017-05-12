@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var ForceBoolean = function (value) {
     switch (typeof value) {
         case 'boolean':
@@ -18,5 +19,5 @@ var ForceBoolean = function (value) {
 if (!global.ForceBoolean) {
     global.ForceBoolean = ForceBoolean;
 }
-module.exports = ForceBoolean;
+exports.default = ForceBoolean;
 //# sourceMappingURL=index.js.map

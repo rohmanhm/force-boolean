@@ -28,4 +28,4 @@ if (!global.ForceBoolean) {
   global.ForceBoolean = ForceBoolean
 }
 
-export = ForceBoolean
+export default ForceBoolean
