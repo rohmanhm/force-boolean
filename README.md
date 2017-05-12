@@ -1,4 +1,5 @@
 # Force Boolean
+ [![Build Status](https://travis-ci.org/rohmanhm/force-boolean.svg?branch=master)](https://travis-ci.org/rohmanhm/force-boolean)
 Forced transform your variable into a boolean without worried.
 
 ## How to install
