@@ -1,4 +1,4 @@
-import ForceBoolean from '../dist'
+import ForceBoolean = require('../dist')
 
 describe('force-boolean', () => {
   describe('return false', () => {

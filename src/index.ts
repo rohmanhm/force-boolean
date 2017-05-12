@@ -23,9 +23,4 @@ const ForceBoolean = (value: ForceBoolean$Value): Boolean => {
   }
 }
 
-// Support for object window
-if (!global.ForceBoolean) {
-  global.ForceBoolean = ForceBoolean
-}
-
-export default ForceBoolean
+export = ForceBoolean

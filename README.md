@@ -9,10 +9,12 @@ Forced transform your variable into a boolean without worried.
 
 ## How to use
 ```javascript
-// ES6+
+// ES6+ Babel
 import ForceBoolean from 'force-boolean'
+// Typescript
+import ForceBoolean = require('force-boolean')
 // CommonJS
-const ForceBoolean = require('force-boolean').default
+const ForceBoolean = require('force-boolean')
 
 const YOUR_VAR = 'false'
 console.log(ForceBoolean(YOUR_VAR)) // it's return boolean false
