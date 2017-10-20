@@ -1,2 +1,2 @@
-declare const ForceBoolean: (value: void | Object | String | Number | Boolean) => Boolean;
+declare const ForceBoolean: (value: boolean | void | Object | String | Number) => boolean;
 export = ForceBoolean;

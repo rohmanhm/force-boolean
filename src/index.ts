@@ -1,8 +1,8 @@
-type ForceBoolean$Value = Boolean | String | Number | Object | void
+type ForceBoolean$Value = boolean | String | Number | Object | void
 interface Window { ForceBoolean: any }
 declare const global: Window
 
-const ForceBoolean = (value: ForceBoolean$Value): Boolean => {
+const ForceBoolean = (value: ForceBoolean$Value): boolean => {
   switch(typeof value) {
     // Example: true and false
     case 'boolean':
