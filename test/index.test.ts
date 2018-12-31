@@ -1,14 +1,14 @@
-import ForceBoolean = require('../dist')
+import ForceBoolean from '../dist'
 
 describe('force-boolean', () => {
   describe('return false', () => {
     it('return false if value is number 0', () => {
       expect(ForceBoolean(0)).toBe(false)
     })
-    it('return false if value is string \'0\'', () => {
+    it("return false if value is string '0'", () => {
       expect(ForceBoolean('0')).toBe(false)
     })
-    it('return false if value is string \'false\'', () => {
+    it("return false if value is string 'false'", () => {
       expect(ForceBoolean('false')).toBe(false)
     })
     it('return false if value is boolean false', () => {
@@ -25,10 +25,10 @@ describe('force-boolean', () => {
     it('return true if value is number 1', () => {
       expect(ForceBoolean(1)).toBe(true)
     })
-    it('return true if value is string \'1\'', () => {
+    it("return true if value is string '1'", () => {
       expect(ForceBoolean('1')).toBe(true)
     })
-    it('return true if value is string \'true\'', () => {
+    it("return true if value is string 'true'", () => {
       expect(ForceBoolean('true')).toBe(true)
     })
     it('return true if value is boolean true', () => {
