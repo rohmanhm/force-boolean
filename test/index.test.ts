@@ -11,6 +11,9 @@ describe('force-boolean', () => {
     it("return false if value is string 'false'", () => {
       expect(ForceBoolean('false')).toBe(false)
     })
+    it("return false if value is plain string 'foobar'", () => {
+      expect(ForceBoolean('foobar')).toBe(false)
+    })
     it('return false if value is boolean false', () => {
       expect(ForceBoolean(false)).toBe(false)
     })
@@ -21,6 +24,7 @@ describe('force-boolean', () => {
       expect(ForceBoolean(undefined)).toBe(false)
     })
   })
+
   describe('return true', () => {
     it('return true if value is number 1', () => {
       expect(ForceBoolean(1)).toBe(true)
@@ -39,6 +43,17 @@ describe('force-boolean', () => {
     })
     it('return true if value is object', () => {
       expect(ForceBoolean({ a: 1, b: 3 })).toBe(true)
+    })
+  })
+
+  describe('strict mode is off', () => {
+    it('return true if value is plain string "foobar"', () => {
+      expect(ForceBoolean('foobar', false)).toBe(true)
+    })
+
+    it('return false if value is false or 0', () => {
+      expect(ForceBoolean('false', false)).toBe(false)
+      expect(ForceBoolean('0', false)).toBe(false)
     })
   })
 })

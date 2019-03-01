@@ -1,4 +1,11 @@
-const ForceBoolean = (value: any): boolean => {
+/**
+ * ForceBoolean
+ * 
+ * @param value 
+ * @param strict 
+ */
+
+const ForceBoolean = (value: any, strict: boolean = true): boolean => {
   switch (typeof value) {
     // Example: true and false
     case 'boolean':
@@ -11,6 +18,12 @@ const ForceBoolean = (value: any): boolean => {
       return !(value === null)
     // Example: 'true' or 'false' or '0' or '1'
     case 'string':
+      if (!strict) {
+        if (value === 'false' || value === '0') return false
+ 
+        return true
+      }
+
       return value === 'true' || value === '1'
     // Example: undefined
     case 'undefined':
