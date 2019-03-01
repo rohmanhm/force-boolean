@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "transform and convert into real boolean",
   "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "typings": "./types/index.d.ts",
   "license": "MIT",
   "keywords": [
     "javascript",
