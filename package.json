@@ -14,8 +14,9 @@
     "boolean"
   ],
   "scripts": {
-    "prepublish": "tsc",
-    "test": "jest --forceExit"
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -27,12 +28,12 @@
     "url": "https://github.com/rohmanhm"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.10",
-    "jest": "^23.6.0",
-    "ts-jest": "^23.10.5",
-    "tslint": "^5.12.0",
+    "@types/jest": "^24.0.9",
+    "jest": "^24.1.0",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.13.1",
     "tslint-config-standard": "^8.0.1",
-    "typescript": "^3.2.2"
+    "typescript": "^3.3.3333"
   },
   "jest": {
     "globals": {
