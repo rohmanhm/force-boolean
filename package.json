@@ -28,7 +28,7 @@
     "url": "https://github.com/rohmanhm"
   },
   "devDependencies": {
-    "@types/jest": "24.0.9",
+    "@types/jest": "24.0.18",
     "jest": "24.9.0",
     "ts-jest": "24.0.0",
     "tslint": "5.13.1",
