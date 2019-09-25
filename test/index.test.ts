@@ -1,3 +1,4 @@
+// @ts-ignore
 import ForceBoolean from '../dist'
 
 describe('force-boolean', () => {

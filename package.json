@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run build",
-    "test": "jest --forceExit --detectOpenHandles"
+    "test": "npm run build && jest --forceExit --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -28,27 +28,11 @@
     "url": "https://github.com/rohmanhm"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.9",
-    "jest": "^24.1.0",
-    "ts-jest": "^24.0.0",
-    "tslint": "^5.13.1",
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
     "tslint-config-standard": "^8.0.1",
-    "typescript": "^3.3.3333"
-  },
-  "jest": {
-    "globals": {
-      "__TS_CONFIG__": "tsconfig.json"
-    },
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
-    },
-    "testMatch": [
-      "**/test/**/*.test.(ts|js)"
-    ],
-    "testEnvironment": "node"
+    "typescript": "^3.6.3"
   }
 }
