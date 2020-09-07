@@ -1,6 +1,6 @@
 {
   "name": "force-boolean",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Transform and convert any value into boolean",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
