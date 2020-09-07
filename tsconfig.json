@@ -3,7 +3,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "lib": ["es2015"],
-    "declarationDir": "./types",
     "sourceMap": true,
     "declaration": true,
     "outDir": "./dist",
